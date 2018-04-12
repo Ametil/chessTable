@@ -1,0 +1,278 @@
+.gameTable{
+	background-size: 100% 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+    float: left;
+}
+.defaultChessContainer, .defaultArrowContainer{
+    margin: 23px auto 0 auto !important;
+    width: 115px;
+    height: 630px;
+    float: left;
+}
+.chessItem, .arrowItem{
+	border: 1px solid white;
+	width: auto !important;
+	padding: 0 !important;
+}
+
+.cDroppable{
+    position:relative;
+}
+
+.ches, .arrow{
+    position:absolute;
+}
+
+.chessItem img, .arrowItem img{
+    width: 55px;
+    height: 55px;
+}
+.marker_empty{
+    background: url(../img/pieces_2/marker_empty.png) no-repeat;
+    background-size: 100% 100%;
+}
+/*there is style for dropdown menu*/
+    #red{
+    	background: rgba(255, 0, 0, 0.5);
+    	cursor: pointer;
+    }
+    #green{
+    	background: rgba(0, 128, 0, 0.5);
+    	cursor: pointer;
+    }
+    #blue{
+        background: rgba(0, 0, 255, 0.5);
+        cursor: pointer;
+    }
+    #yellow{
+    	background: rgba(216, 203, 80, 0.6);
+    	cursor: pointer;
+    }
+    #none{
+        background: none;
+        cursor: pointer;
+    }
+    #board{
+        border: 2px solid black;
+    	background: none;
+    	cursor: pointer;
+    }
+    .colors{
+        position: absolute;
+        display: none;
+        min-width: 100px !important;
+        padding: 0px !important;
+    }
+    .color{
+        padding: 5px !important;
+    }
+/*\there is style for dropdown menu\*/
+
+/*there is style for navbar*/
+    .navbar-default{
+    	padding-top: 6px;
+        padding-left: 10px;
+    }
+    .navbar{
+        margin-bottom: 3px !important;
+    }
+    #prefix{
+    	width: 140px;
+    	touch-action: inherit;
+        cursor: auto;
+    }
+/*\there is style for navbar\*/
+
+/*there is style for UNcolored table*/
+    .td.white.B_WStyle{
+        background-image: url(../img/pieces_2/fon_white_150.png);
+        background-size: 100% 100%;
+    }
+    .td.black.B_WStyle{
+        background-image: url(../img/pieces_2/fon2_150.png);
+        background-size: 100% 100%;
+    }
+    table.gameTable.B_WStyle{
+        background-image: url(../img/pieces_2/fon_white_150.png);
+    }
+    .legend.B_WStyle{
+        font-family: verdana;
+        padding: 0;
+        color: black;
+        text-align: center;
+        vertical-align: middle;
+    }
+    td.legend.top.B_WStyle{
+        background: url(../img/pieces_2/top_border.png) no-repeat;
+        background-size: 100% 20%;
+        background-position: bottom;
+        padding-bottom: 2px;
+        color: white;
+    }
+    td.left_top.B_WStyle{
+        background: url(../img/pieces_2/left_top_angle.png) no-repeat;
+        background-size: 20% 20%;
+        background-position: bottom right;
+    }
+    td.legend.left.B_WStyle{
+        background: url(../img/pieces_2/left_border.png) no-repeat;
+        background-size: 20% 100%;
+        background-position: right;
+    }
+    td.left_bottom.B_WStyle{
+        background: url(../img/pieces_2/left_bottom_angle.png) no-repeat;
+        background-size: 20% 20%;
+        background-position: top right;
+    }
+    td.legend.bottom.B_WStyle{
+        background: url(../img/pieces_2/bottom_border.png) no-repeat;
+        background-size: 100% 20%;
+        background-position: top;
+    }
+    td.right_bottom.B_WStyle{
+        background: url(../img/pieces_2/right_bottom_angle.png) no-repeat;
+        background-size: 20% 20%;
+        background-position: top left;
+    }
+    td.legend.right.B_WStyle{
+        background: url(../img/pieces_2/right_border.png) no-repeat;
+        background-size: 20% 100%;
+        background-position: left;
+        color: white;
+    }
+    td.right_top.B_WStyle{
+        background: url(../img/pieces_2/right_top_angle.png) no-repeat;
+        background-size: 20% 20%;
+        background-position: bottom left;
+    }
+    .legend.top>.verticalLegend{
+        padding-top: 0;
+    }
+
+/*\there is style for UNcolored table\*/
+
+/*there is style for colored table style*/
+    .td.white.coloredStyle{
+        background-image: url(../img/pieces_2/new_greenWhite.png);
+        background-size: 100% 100%;
+    }
+    .td.black.coloredStyle{
+        background-image: url(../img/pieces_2/new_greenBlack.png);
+        background-size: 100% 100%;
+    }
+    table.gameTable.coloredStyle{
+        background-image: url(../img/pieces_2/new_greenBackground.png);
+        color: white;
+       
+        vertical-align: middle;
+        text-shadow: 1.5px 1.5px #777, -1.5px -1.5px #333;
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+    .legend.coloredStyle{
+         text-align: center;
+    }
+/*\there is style for colored table style\*/
+
+/*there is style for marker control*/
+    .marker_white{
+        background: url(../img/pieces_2/marker_white.png) no-repeat;
+        background-size: 100% 100%;
+    }
+    .marker_black{
+        background: url(../img/pieces_2/marker_black.png) no-repeat;
+        background-size: 100% 100%;
+    }
+    .marker_empty{
+        background: url(../img/pieces_2/marker_empty.png) no-repeat;
+        background-size: 100% 100%;
+    }
+/*\there is style for marker control\*/
+
+/*there is style for 680px size*/
+    div.cell.size680, .ches.size680, .arrow.size680{
+        height: 76px;
+        width: 76px;
+    }
+    div.marker_empty.size680, #markerBottom.size680 {
+        height: 36px;
+        width: 36px;
+    }
+    .legend.size680.B_WStyle{
+        font-size: 20px;
+    }
+    .legend.bottom.B_WStyle{
+        padding-top: 4px;
+    }
+    .legend.left.B_WStyle{
+        padding-right: 3px;
+    }
+    .legend.left.size680.coloredStyle, .legend.right.size680.coloredStyle{
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .legend.top.size680.coloredStyle, .legend.bottom.size680.coloredStyle{
+        font-size: 19px;
+        font-weight: 700;
+    }
+/*\there is style for 680px size\*/
+
+/*there is style for 304px size*/
+    div.cell.size304, .ches.size304, .arrow.size304{
+        height: 33px;
+        width: 33px;
+    }
+    div.marker_empty.size304, #markerBottom.size304 {
+        height: 20px;
+        width: 20px;
+    }
+    .legend.size304.B_WStyle{
+        font-size: 11px;
+    }
+    .legend.size304.coloredStyle{
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .top.horizontalLegend.B_WStyle.size304>div{ 
+        font-size: 1px;
+    }
+    .left.verticalLegend.B_WStyle.size304>div{ 
+        padding-right: 3px;
+    }
+    .bottom.horizontalLegend.B_WStyle.size304>div{ 
+        padding-top: 3px;
+    }
+/*\there is style for 304px size\*/
+
+/*there is style for 1000px size*/
+    div.cell.size1000, .ches.size1000, .arrow.size1000{
+        height: 114px;
+        width: 114px;
+    }
+    div.marker_empty.size1000, #markerBottom.size1000 {
+        height: 44px;
+        width: 44px;
+    }
+    .legend.size1000.B_WStyle{
+        font-size: 22px;
+    }
+    .legend.size1000.coloredStyle{
+        font-size: 23px;
+        font-weight: 700;
+    }
+/*\there is style for 1000px size\*/
+
+
+/*fen*/
+    #FEN{
+        width: 525px;
+    }
+    .fen{
+        margin-right: 100%;
+        width: 655px;
+        padding: 10px 0 10px 0;
+    }
+    textarea{
+        width: 655px;
+    }
+/*\fen/*/
